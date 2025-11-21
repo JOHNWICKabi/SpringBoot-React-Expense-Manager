@@ -1,0 +1,183 @@
+/* Normal Light Mode */
+.app {
+  background-color: #ffffff;
+  color: #000;
+  min-height: 100vh;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+/* Dark Mode */
+.app.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Dark mode input + card adjustment */
+.app.dark input,
+.app.dark select,
+.app.dark button,
+.app.dark textarea {
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid #555;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  padding: 8px 15px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.toggle-btn:hover {
+  background-color: #666;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 320px;
+}
+
+.expense-item, .category-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.edit-icon, .delete-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit-icon:hover { color: blue; }
+.delete-icon:hover { color: red; }
+
+/* Layout for calendar page */
+.calendar-page {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Sidebar */
+.calendar-sidebar {
+  width: 320px;
+  background: var(--card-bg, #fff);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.calendar-month {
+  font-weight: 600;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.week-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.calendar-grid { margin-top: 8px; }
+
+.calendar-row { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+
+.calendar-cell {
+  min-height: 72px;
+  border-radius: 6px;
+  padding: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.calendar-cell.muted { opacity: 0.35; }
+
+.calendar-cell .cell-day { font-weight: 600; }
+
+.calendar-cell .cell-badge {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  background: #2b8aef;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 12px;
+}
+
+/* selected / today styles */
+.calendar-cell.selected { outline: 2px solid #2b8aef; background: rgba(43,138,239,0.05); }
+.calendar-cell.today { box-shadow: inset 0 0 0 1px rgba(43,138,239,0.12); }
+
+/* Day panel (right side) */
+.day-panel {
+  flex: 1;
+  background: var(--card-bg, #fff);
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.day-panel-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:12px; }
+.day-total { font-weight:700; color:#2b8aef; }
+
+/* expense card in day list */
+.expense-card {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 12px;
+  border-radius:8px;
+  margin-bottom:10px;
+  background: rgba(0,0,0,0.03);
+}
+.app.dark .expense-card { background: rgba(255,255,255,0.03); }
+
+.expense-desc { font-weight:600; }
+.expense-meta { opacity:0.7; font-size:12px; margin-top:6px; }
+.expense-right { text-align:right; display:flex; flex-direction:column; gap:8px; align-items:flex-end; }
+
+.icon-btn { background:transparent; border:none; cursor:pointer; font-size:16px; padding:6px; border-radius:6px;}
+.icon-btn:hover { background: rgba(0,0,0,0.06); }
+.app.dark .icon-btn:hover { background: rgba(255,255,255,0.06); }
