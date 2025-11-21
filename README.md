@@ -42,6 +42,7 @@ React Router
 Axios
 
 📂 Project Structure
+
 project-root/
 │
 ├── backend/
