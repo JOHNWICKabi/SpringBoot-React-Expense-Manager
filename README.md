@@ -43,7 +43,7 @@ Axios
 
 📂 Project Structure
 
-project-root/
+<pre>project-root/
 │
 ├── backend/
 │   ├── src/main/java/
@@ -61,7 +61,7 @@ project-root/
     ├── src/pages/
     ├── src/App.js
     ├── package.json
-    └── public/
+    └── public/</pre>pre>
 
 ⚙️ How It Works
 Backend
