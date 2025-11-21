@@ -46,8 +46,14 @@ Axios
 project-root/
 │
 ├── backend/
-│   ├── src/main/java/... (controllers, services, models, DTOs, repositories)
-│   ├── src/main/resources/application.properties
+│   ├── src/main/java/
+│   │   ├── controllers/
+│   │   ├── services/
+│   │   ├── models/
+│   │   ├── DTOs/
+│   │   └── repositories/
+│   ├── src/main/resources/
+│   │   └── application.properties
 │   └── pom.xml
 │
 └── frontend/
