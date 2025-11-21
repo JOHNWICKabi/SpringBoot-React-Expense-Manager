@@ -1,7 +1,5 @@
 # SpringBoot-React-Expense-Manager
 
-Here is a **complete, professional, GitHub-ready README** for your **Expense Manager – Spring Boot + React Full-Stack Application**, created in the same structure and style as the sample you shared.
-
 ---
 
 # 💰 Expense Manager – Spring Boot + React Full-Stack Application
