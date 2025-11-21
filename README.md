@@ -31,14 +31,13 @@ A full-stack Expense Manager application built using **Spring Boot** for the bac
   * Spring Web
   * Spring Data JPA
 * Lombok
-* MySQL (or any relational DB)
+* Postgres 
 
 ### **Frontend**
 
 * React
 * React Router
 * Axios
-* CSS / Custom styling
 
 ---
 
