@@ -72,7 +72,7 @@ project-root/
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/expense-manager.git
+git clone https://github.com/JOHNWICKabi/SpringBoot-React-Expense-Manager.git
 cd expense-manager
 ```
 
